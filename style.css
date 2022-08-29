@@ -1,0 +1,206 @@
+body{
+  margin:0;
+  font-family: 'Space Grotesk', sans-serif;
+  color:hsl(278, 68%, 11%);
+}
+
+form{
+  width:50%;
+  margin-left: 20em;
+  margin-right:auto;
+}
+
+label{
+  margin:1.5em 0;
+  font-size:1.125rem;
+  display:block;
+}
+
+input:focus{
+  outline:none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#container{
+  display:flex;
+}
+
+.left{
+  width:35%;
+  position:relative;
+}
+
+.background{
+  width:100%;
+  height:100%;
+}
+
+.right{
+  width:65%;
+  margin:9em auto;
+  padding:3em;
+}
+
+.group1{
+  width:100%;
+}
+
+.group2, .group3{
+  display:inline-block;
+  width:49%;
+}
+
+.group2-month, .group2-year{
+  display:inline-block;
+  width:40%;
+}
+
+.outline{
+  border:1px solid hsl(270, 3%, 87%);
+  width:100%;
+  border-radius: 10px;
+  position:relative;
+}
+
+.inputs{
+  border-radius: 10px;
+  border: none;
+  width:50%;
+  height:35px;
+  padding-left:5px;
+}
+
+.confirm-button{
+  display:block;
+  margin:4em 0;
+  width:100%;
+  height:39px;
+  padding-left:5px;
+  border-radius: 10px;
+  border:none;
+  background-color:hsl(278, 68%, 11%);
+  color:hsl(0, 0%, 100%);
+}
+
+.confirm-button:hover{
+  cursor:pointer;
+  background-color:hsl(249, 99%, 64%);
+  transition: 0.3s;
+}
+
+.icons{
+  position:absolute;
+  visibility:hidden;
+  top:10px;
+  right:10px;
+}
+
+.errors{
+  color:hsl(0, 100%, 66%);
+  position:absolute;
+  visibility: hidden;
+  top:40px;
+  left:0px;
+}
+
+.cards{
+  position:absolute;
+  top:15%;
+  left:20%;
+}
+
+.card-front, .card-back{
+  padding:1em;
+  position:relative;
+}
+
+.card-back{
+  left:50px;
+}
+
+.card-logo{
+  position:absolute;
+  left:40px;
+  top:40px;
+}
+
+.card-data{
+  width:75%;
+  color:#fff;
+  position:absolute;
+  bottom:30px;
+  left:40px;
+}
+
+.name{
+  margin:1em 0;
+  width:100%;
+}
+
+.card-name{
+  display:inline-block;
+  width:45%;
+}
+
+.month-year{
+  display:inline-block;
+  width:45%;
+  text-align:right;
+  margin-left:30px;
+}
+
+.card-month{
+  display:inline-block;
+}
+
+.card-year{
+  display:inline-block;
+}
+
+.card-number{
+  font-size:2em;
+  letter-spacing:1px;
+  margin-bottom:1em;
+}
+
+.cvc-card-text{
+  color:#fff;
+  position:absolute;
+  left:440px;
+  bottom:150px;
+}
+
+
+.outline.succes{
+  border-color:hsl(117, 49%, 60%);
+}
+
+.outline.wrong{
+  border-color:hsl(0, 100%, 66%);
+}
+
+.outline.succes i.fa-circle-check{
+  color:hsl(117, 49%, 60%);
+  visibility:visible;
+}
+
+.outline.wrong i.fa-circle-exclamation{
+  color:hsl(0, 100%, 66%);
+  visibility:visible;
+}
+
+.outline.wrong small{
+  visibility:visible;
+  color:hsl(0, 100%, 66%);
+}
